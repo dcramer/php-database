@@ -66,12 +66,13 @@ class MySQLdb extends Database
         parent::execute($sql);
         $result_id = mysql_query($sql);
         if (!$result_id) $this->error('Invalid SQL: '.$sql);
+        return $result_id;
     }
     
     function fetch_array($id)
     {
         parent::fetch_array($id);
-        return @mysql_fetch_array($id);
+        return mysql_fetch_array($id);
     }
     
     function free_result($id)
@@ -176,6 +177,7 @@ class PostgreSQLdb extends Database
         parent::execute($sql);
         $result_id = mysql_query($sql);
         if (!$result_id) $this->error('Invalid SQL: '.$sql);
+        return $result_id;
     }
     
     function fetch_array($id)
