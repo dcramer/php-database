@@ -3,7 +3,7 @@
  * SQL functions library for PHP5
  *
  * @author David Cramer <dcramer@gmail.com
- * @package mysqldb
+ * @package phpdatabase
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL
  * @copyright 2008 David Cramer
  * @version 0.1
